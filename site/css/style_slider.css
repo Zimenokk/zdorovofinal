@@ -1,0 +1,58 @@
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 30px 0;
+    /* height: 10vh; */
+}
+
+.sliderWrapper {
+    width: 100%;
+}
+
+.image-slider {
+    width: 100%;
+}
+
+.image-slider__wrapper {}
+
+.image-slider__slide {}
+
+.image-slider__image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-slider__image img {}
+
+
+/* Cтрелки */
+
+
+/* .image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: black;
+    font-size: 80px;
+} */
+
+
+/* ПАГИНАЦИЯ */
+
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+
+
+/* БУЛЛЕТЫ */
+
+.image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: grey;
+}
+
+
+/* Style ITEM___________________________________________ */

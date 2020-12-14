@@ -1,0 +1,249 @@
+/* HEADER___________________________________________________ */
+
+header {
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 38px;
+    height: 36px;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    max-width: 180px;
+    width: 100%;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.right_header {
+    max-width: 705px;
+    width: 100%;
+    align-items: center;
+}
+
+.right_header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+/* .right_header a:hover {
+    text-decoration: underline white;
+} */
+
+.header_list {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header_list a {
+    color: white;
+    padding: 5px 15px;
+}
+
+.right_header img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Animation_______________________________ */
+
+ul li a {
+    position: relative;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    z-index: 1000;
+    transition: 1s;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    transition: 0.7s;
+    z-index: -1;
+    color: black;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+ul li a:hover::before {
+    animation: animate .3s linear forwards;
+    -webkit-animation: animate .3s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        top: calc(50% - 2px);
+        left: -100%;
+        height: 4px;
+    }
+    50% {
+        top: calc(50% - 2px);
+        left: 0;
+        height: 4px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
+
+
+/* Animation_______________________________ */
+
+
+/* FOOTER______________________________________________________________ */
+
+footer {
+    border-top: 2px solid black;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+footer::after {
+    background: url("../images/cons_bg.png");
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .03;
+    z-index: 50;
+}
+
+.innerFooter {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.upFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 0;
+    align-items: center;
+}
+
+.upFooter div {
+    margin: 0 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.upFooter p {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.upFooter img {
+    width: 105px;
+    height: 105px;
+}
+
+.upFooter a {
+    width: 100%;
+    text-align: left;
+}
+
+.middleFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.textFoot p {
+    margin-bottom: 20%;
+}
+
+.upMiddleFoot {
+    display: flex;
+    flex-direction: row;
+}
+
+.upMiddleFoot p {
+    margin: 0 6%;
+}
+
+.centrMiddleFooter {
+    margin: 0 10%;
+}
+
+.downmiddleDiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 15% -9.5% 0 -2.5%;
+}
+
+.downFooter {
+    display: flex;
+    margin: 2% 0 2% 0;
+    font-size: 1.2rem;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.downFooter p:first-child {
+    margin-bottom: 2%;
+    font-family: 'Megrim', cursive;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+
+/* .downFooter p:first-child {
+   width: 70%;
+   text-align: flex-end;
+   display: flex;
+   align-items: flex-end;
+}
+*/
