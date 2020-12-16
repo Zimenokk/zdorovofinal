@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
 }
 
 header .container {
@@ -37,8 +37,8 @@ header .container {
 }
 
 .right_header {
-    max-width: 705px;
-    width: 100%;
+    /* max-width: 705px; */
+    width: 60%;
     align-items: center;
 }
 
@@ -140,6 +140,7 @@ footer {
     border-top: 2px solid black;
     font-size: 1.8rem;
     position: relative;
+    margin-top: 5%;
 }
 
 footer::after {
@@ -247,3 +248,14 @@ footer::after {
    align-items: flex-end;
 }
 */
+
+
+/* BURGER-HIDDEN */
+
+.menu__toggle {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+}
